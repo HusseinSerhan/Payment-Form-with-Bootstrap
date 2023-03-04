@@ -6,11 +6,7 @@ This project is a payment form built using Bootstrap 5.2. The form includes vari
 
 You can view the payment form at https://husseinserhan.github.io/Payment-Form-with-Bootstrap/
 
-<<<<<<< HEAD
 ![Alt Text](PaymentForm.gif)
-=======
-![Alt Text]()
->>>>>>> 4f6b76b8cb9c4748a3ff3a7cdb63c21564667023
 
 ## Guidelines Followed
 
