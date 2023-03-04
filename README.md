@@ -1,6 +1,6 @@
-# Payment Form with Bootstrap 5.2
+# Payment Form with Bootstrap
 
-This project is a payment form built using Bootstrap 5.2. The form includes various input types such as text, form-check-input, and number, and has been validated according to HTML5 standards.
+This project is a payment form built using Bootstrap. The form includes various input types such as text, form-check-input, and number, and has been validated according to HTML5 standards.
 
 ## Getting Started
 
