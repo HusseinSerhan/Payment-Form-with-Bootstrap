@@ -2,6 +2,10 @@
 
 This project is a payment form built using Bootstrap 5.2. The form includes various input types such as text, email, and number, and has been validated according to HTML5 standards.
 
+## Getting Started
+
+You can view the payment form at https://husseinserhan.github.io/Payment-Form-with-Bootstrap/
+
 ## Guidelines Followed
 
 To ensure that the inputs are being used properly, I made sure to include the correct input type for each field. I used select and option tags to build a menu with multiple states as options and input tags with the type="radio" attribute, class="form-check-input" and name="payment-method" to allow the user to only pick one payment method (visa, amex, mastercard, and bitcoin).
