@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <script src="https://kit.fontawesome.com/38eb747747.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container mt-4">
+<!-- Card Header -->
+        <div class="card">
+            <div class="card-header bg-light">
+                <h3>Payment Form Example</h3>
+            </div>
+        <div class="card-body">
+
+<!-- Form -->
+      <form>
+<!-- Alert message -->
+        <button type="button" class="btn btn-danger w-100 text-start mb-2" style="background-color: pink; border: none; color:darkred">Some fields are missing</button>
+
+<!-- Row with card, cvc and amount -->
+        <div class="d-flex justify-content-between"> 
+                    <div class="mb-3 mr-2 col-5">
+                        <label for="card-number" class="form-label">Card #</label>
+                        <input type="text" class="form-control" id="card-number" placeholder="XXXXXXXXXXX" required />
+                    </div>
+                    <div class="mb-3 mr-2 col-3">
+                        <label for="cvc-number" class="form-label">CVC#</label>
+                        <input type="text" class="form-control" id="cvc-number" placeholder="0000" required />
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Amount" required />
+                    </div>
+        </div>
+
+<!-- Row with 1st and last name -->
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="first-name" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="first-name" required />
+          </div>
+          <div class="col-md-6">
+            <label for="last-name" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="last-name" required />
+          </div>
+        </div>
+
+        <!-- City State and postal code -->
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" required />
+          </div>
+          <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" required>
+                <option value="">Select a state</option>
+                <option value="AL">Alabama</option>
+                <option value="CA">California</option>
+                <option value="FL">Florida</option>
+                <option value="NY">New York</option>
+                <option value="TX">Texas</option>
+            </select>
+          </div>
+
+          <div class="col-md-4">
+            <label for="postal-code" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="postal-code" required />
+          </div>
+        </div>
+
+        <!-- We accept and message -->
+        <div class="mb-3 d-flex justify-content-between">
+
+                    <div class="col-4 form-group">
+                        <label class="mb-2">We accept:</label><br>
+
+                        <div class="form-check form-check-inline ">
+                          <input class="form-check-input" type="radio" name="payment-method" id="master" value="mastercard">
+                          <label class="form-check-label" for="master">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="payment-method" id="amex" value="amex">
+                          <label class="form-check-label" for="amex">
+                            <i class="fa-brands fa-cc-amex"></i>
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="payment-method" id="visa" value="visa">
+                          <label class="form-check-label" for="visa">
+                            <i class="fa-brands fa-cc-visa"></i>
+                          </label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="payment-method" id="bitcoin" value="bitcoin">
+                            <label class="form-check-label" for="bitcoin">
+                              <i class="fa-brands fa-bitcoin"></i>
+                            </label>
+                          </div>
+
+                      </div>
+                                  
+                <div class="col-8">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <p class="text-muted small">Add any notes here.</p>
+                </div>
+    
+        </div>
+
+        <!-- Card Footer -->
+      </form>
+    </div>
+
+        <div class="card-footer bg-light d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary mx-2">Cancel</button>
+            <button type="submit" class="btn btn-primary mx-2">Send</button>
+            
+        </div>
+
+
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-B6OfocU6rGJ6oKjzpo+mU+aQduZcmkOZJG9XeheCfcRcVIWgJxncFQ28qdk5wn5wzZg8fZxoKTzck9n99CEPug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
+
